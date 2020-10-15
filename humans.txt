@@ -3,13 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Ana Shioshita and Canary Zindell - Co-founders
+    Brian Manning - Web and Backend Developer
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css

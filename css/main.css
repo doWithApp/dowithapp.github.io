@@ -7,6 +7,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+@import "colors.css";
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -261,3 +263,195 @@ textarea {
   }
 }
 
+@font-face{
+	font-family: 'CaviarDreams';
+	src: url('webfonts/CaviarDreams-webfont.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'CaviarDreams';
+	src: url('webfonts/Caviar_Dreams_Bold-webfont.woff') format('woff');
+  font-weight: bold;
+}
+
+@media only screen and (max-width:480px) {
+  #demo-video {
+    display: none;
+  }
+
+  #demo-video-mobile {
+    align-self: flex-end;
+    display: inline-block;
+    font-family: Avenir;
+    line-height: 27px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 45px 0;
+  }
+
+  #demo-video-mobile a {
+    color: var(--brand-blue);
+    text-decoration: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .titlebar {
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width:481px) {
+  #demo-video-mobile {
+    display: none;
+  }
+
+  #demo-youtube {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+  }
+
+  .titlebar {
+    align-items: center;
+  }
+}
+
+.crowd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.form-content {
+  background-color: var(--brand-blue);
+  color: white;
+  font-family: 'Avenir';
+  font-weight: 400;
+  margin-top: 61px;
+  padding: 116px 0;
+  position: relative;
+  opacity: 0.85;
+  text-align: center;
+  z-index: 1;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 127px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.mc_embed_signup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 31px;
+  padding-bottom: 64px;
+}
+
+.mc-field-group input[type="email"] {
+  border: none;
+  height: 42px;
+  margin: 18px 29px;
+  margin-top: 12px;
+  outline: none;
+  padding: 0;
+  text-align: center;
+  width: 300px;
+}
+
+.mc-field-group input[type="submit"] {
+  background: var(--button-yellow);
+  border: none;
+  color: black;
+  cursor: pointer;
+  height: 42px;
+  margin: 12px 0;
+  padding: 7px 40px;
+}
+
+
+.modal {
+  display: none;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.nav {
+  box-sizing: border-box;
+  color: var(--brand-blue);
+  padding: 45px;
+  text-align: right;
+  font-family: Avenir;
+  line-height: 27px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.prompt {
+  font-size: 28px;
+  line-height: 38px;
+  margin-top: 127px;
+}
+
+.scrim {
+  background-color:  #797979;
+  height: 100%;
+  opacity: 0.6;
+  width: 100%;
+  z-index: 999;
+}
+
+.subscribe {
+  position: relative;
+}
+
+.tagline {
+  font-size: 69px;
+  font-weight: 800;
+  line-height: 94px;
+}
+
+.tagsub {
+  font-size: 31px;
+  line-height: 42px;
+  margin-top: 18px;
+}
+
+.titlebar {
+  color: var(--brand-blue);
+  display: inline-flex;
+  flex-direction: column;
+  font-family: 'CaviarDreams';
+  justify-content: center;
+}
